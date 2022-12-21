@@ -20,6 +20,7 @@
   </head>
   <body>
     <h2 class="title">Bridge tunel</h2>
+    <!-- Що таке файл glb -->
     <!-- <model-viewer> HTML element -->
     <model-viewer
       src="Bridge.glb"
@@ -32,6 +33,7 @@
       camera-orbit="1662deg 65.29deg 72.12m"
       field-of-view="22.98deg"
     >
+      <!-- дізнатися як дістати data-position, data-normal -->
       <button
         class="Hotspot"
         slot="hotspot-1"
@@ -47,7 +49,13 @@
         data-normal="-0.1903501757957235m 0.9817142996743189m 0.0019607114777794596m"
         data-visibility-attribute="visible"
       >
-        <div class="HotspotAnnotation">Довжина L=9м</div></button
+        <a
+          class="HotspotAnnotation HotspotAnnotation--link"
+          href="https://magneticonegis.maps.arcgis.com/apps/webappviewer3d/index.html?id=d6d01ce6521348b198f37a85cb6f6bea"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Довжина L=9м</a
+        ></button
       ><button
         class="Hotspot"
         slot="hotspot-4"
@@ -71,5 +79,6 @@
       type="module"
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
     ></script>
+    <!-- спробувати дістати js файл -->
   </body>
 </html>

@@ -73,6 +73,10 @@ model-viewer {
   width: max-content;
 }
 
+.HotspotAnnotation--link:hover {
+  background-color: #c0f7e6;
+}
+
 .Hotspot:not([data-visible]) > * {
   opacity: 0;
   pointer-events: none;
